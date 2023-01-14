@@ -1,0 +1,22 @@
+{
+  "name": "shiba-every-hour-mastodon",
+  "version": "1.0.0",
+  "description": "GitHub Action to power ShibaEveryHour@mas.to",
+  "main": "index.js",
+  "author": "Alex Chiu",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint index.mjs",
+    "shibe": "node index.mjs",
+    "dev-shibe": "env NODE_ENV=development node index.mjs"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "got": "^12.5.3",
+    "masto": "^5.4.0",
+    "mastodon-api": "^1.3.0",
+    "node-fetch": "^3.3.0",
+    "request": "^2.88.2"
+  }
+}
