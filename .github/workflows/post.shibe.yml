@@ -16,4 +16,4 @@ jobs:
       - run: npm install
       - run: npm run shibe
         env:
-          CONSUMER_KEY: ${{ secrets.ACCESS_TOKEN_KEY }}
+          ACCESS_TOKEN_KEY: ${{ secrets.ACCESS_TOKEN_KEY }}
