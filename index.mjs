@@ -3,7 +3,9 @@ import fetch from "node-fetch";
 
 import * as dotenv from "dotenv";
 
-dotenv.config();
+if (process.env.NODE_ENV === "development") {
+  dotenv.config();
+}
 
 async function sendImageToMasto(shibeImageArrayBuffer) {
   try {
