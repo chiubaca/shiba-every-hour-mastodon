@@ -2,6 +2,8 @@ name: Post New Shiba
 on:
   schedule:
     - cron: "0 * * * *"
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -9,7 +11,6 @@ jobs:
       - uses: actions/checkout@v3
       # Setup .npmrc file to publish to npm
       - uses: actions/setup-node@v3
-      - uses: gautamkrishnar/keepalive-workflow@v1
         with:
           node-version: "16.x"
           registry-url: "https://registry.npmjs.org"
