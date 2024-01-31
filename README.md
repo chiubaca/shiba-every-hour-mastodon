@@ -12,5 +12,5 @@
 
 </div>
 
-[Adapted from my twitter version...](https://github.com/chiubaca/shiba-every-hour)
+[Adapted from my twitter version...](https://github.com/chiubaca/shiba-every-hour) 
 
